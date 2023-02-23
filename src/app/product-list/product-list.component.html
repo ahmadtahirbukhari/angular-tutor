@@ -9,7 +9,9 @@
     </a>
   </h3>
   <p *ngIf="product.description">Description: {{ product.description }}</p>
-  <button type="button" (click)="share()">Share</button>
+  <button type="button" (click)="share()">Share</button><br><br>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+
   <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
 </div>
 <!-- 
